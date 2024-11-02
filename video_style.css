@@ -1,0 +1,34 @@
+/* Ensure the video and detection are centered */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for video and overlay */
+.container {
+    position: relative;
+    width: 640px;
+    height: 480px;
+}
+
+/* Video element styling */
+#video {
+    width: 640px;
+    height: 480px;
+    z-index: 1; /* Ensure it's underneath the overlay */
+}
+
+/* Overlay for the face detection, sitting on top of the video */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; /* Ensure the overlay is on top of the video */
+    pointer-events: none; /* Allow interaction with the video beneath */
+    width: 640px;
+    height: 480px;
+}

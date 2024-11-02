@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Detection</title>
+    <script defer src="face-api.min.js"></script>
+    <link rel="stylesheet" href="video_style.css"> <!-- Link to your external stylesheet -->
+</head>
+<body>
+    <div class="container">
+        <!-- Video element for video playback -->
+        <video id="video" width="640" height="480" controls autoplay muted>
+            <!-- Video source from a path -->
+            <source src="VideoForTest.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Overlay for face detection -->
+        <canvas class="overlay"></canvas>
+    </div>
+
+    <!-- Link to script.js for detection logic -->
+    <script defer src="video_script.js"></script>
+</body>
+</html>
