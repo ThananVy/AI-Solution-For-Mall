@@ -53,34 +53,34 @@ function aggregateData() {
   return { emotionCounts, ageCounts };
 }
 
-function createEmotionChart(emotionCounts) {
-  const ctx = document.getElementById("emotionChart").getContext("2d");
-  const labels = Object.keys(emotionCounts);
-  const data = Object.values(emotionCounts);
+// function createEmotionChart(emotionCounts) {
+//   const ctx = document.getElementById("emotionChart").getContext("2d");
+//   const labels = Object.keys(emotionCounts);
+//   const data = Object.values(emotionCounts);
 
-  new Chart(ctx, {
-    type: "bar",
-    data: {
-      labels: labels,
-      datasets: [
-        {
-          label: "Emotion Counts",
-          data: data,
-          backgroundColor: "rgba(75, 192, 192, 0.2)",
-          borderColor: "rgba(75, 192, 192, 1)",
-          borderWidth: 1,
-        },
-      ],
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true,
-        },
-      },
-    },
-  });
-}
+//   new Chart(ctx, {
+//     type: "bar",
+//     data: {
+//       labels: labels,
+//       datasets: [
+//         {
+//           label: "Emotion Counts",
+//           data: data,
+//           backgroundColor: "rgba(75, 192, 192, 0.2)",
+//           borderColor: "rgba(75, 192, 192, 1)",
+//           borderWidth: 1,
+//         },
+//       ],
+//     },
+//     options: {
+//       scales: {
+//         y: {
+//           beginAtZero: true,
+//         },
+//       },
+//     },
+//   });
+// }
 
 video.addEventListener("play", () => {
   const canvas = document.getElementById("canvas"); // Access the canvas from HTML
