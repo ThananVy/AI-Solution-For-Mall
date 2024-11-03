@@ -1,0 +1,3 @@
+For data svaing as a csv we use index.html + styles.css + script.js
+For straight push we use index_push.html + script_straight_db.js + styule.css
+Make sure to run the upload.php in it own path: "C:\xampp\htdocs\AI_project\upload_csv.php"
